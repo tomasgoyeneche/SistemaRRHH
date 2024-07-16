@@ -1,0 +1,360 @@
+
+/* BackGround Paginas */
+
+.fondopag {
+    background: url(../img/recursos-humanos.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    background-blend-mode: darken;
+}
+
+
+
+/* CSS NAVBAR */
+
+.navbar {
+    background-color: #fff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+.navbar-brand {
+    font-weight: 500;
+    color: black;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+.login-button {
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+.login-button:hover {
+    background-color: darkslategrey;
+}
+.register-button {
+    color: #000;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+.register-button:hover {
+    border: solid 1px black;
+}
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link:hover, .nav-link.active {
+    color: #000;
+}
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: black;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+/* FIN CSS NAVBAR */
+
+
+
+
+
+
+
+
+/* CSS Seccion Principal */
+
+
+.seccion-principal .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+
+.espacio_top{
+    margin-top: 50px;
+}
+
+.card {
+    border: none;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+
+
+/* CSS DEL LOGIN */
+
+
+/* fondo de la izquierda */
+
+.bg-holder {
+    background: url(../img/foto-login.png);
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+}
+
+/* botones */
+
+.boton-submit {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.btn-outline-custom i {
+    vertical-align: text-top;
+}
+
+.btn-outline-custom {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: black; 
+    border-color: #ddd;
+}
+
+.btn-outline-custom:hover {
+    color: black;
+    border-color: #eee;
+    background-color: #eee;
+}
+
+/* divisor ingreso con redes y normal */
+
+.divider-content-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: #fff;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #999;
+}
+.divider {
+    margin: 2rem 0;
+}
+
+/* links */
+
+.a_login {
+    text-decoration: none;
+}
+.a_login:hover {
+    text-decoration: underline;
+}
+
+/* FIN CSS LOGIN */
+.alerta-logreg {
+    display: flex;
+    align-items: center;
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+}
+.alerta-logreg .icon {
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+}
+
+/* CSS DEL REGISTER */
+
+.bg-holder-reg {
+    background: url(../img/foto-register.jpg);
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+.logo_reg:hover {
+    opacity: 0.4;
+}
+
+/* CSS DEL Forgot Password */
+.bg-holder-for {
+    background: url(../img/foto-forgot.jpg);
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-blend-mode: darken;
+}
+
+
+/* CSS Del Employee Dashboard */
+
+
+.contenedor-solicit{
+    padding-top: 200px;
+}
+
+/* Request Vacation */ 
+
+
+.alerta-reqsuc{
+    display: flex;
+    align-items: center;
+    background-color: #6bd47d;
+    color: #026412;
+    border-color: #6bd47d;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+}
+
+.alerta-reqfai{
+    display: flex;
+    align-items: center;
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+}
+
+.contenedor-vacation{
+    background-color: aliceblue;
+
+}
+
+.bg-holder-vac{
+    background: url(../img/foto-vacation.jpg);
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+
+}
+
+/* CSS Del Status Vacation */ 
+
+.bg-holder-reqsta{
+    background: url(../img/foto-statusvacation.jpg);
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+
+}
+
+/* Edita Tus DATOS */
+
+.bg-holder-edit{
+    background: url(../img/foto-cambiodatos.jpg);
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-blend-mode: darken;
+
+}
+
+/* Beneficios de los empleados */
+
+.bg-holder-benemp{
+    background: url(../img/foto-beneficiosemple.jpg);
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+
+}
+
+/* CSS Del Admin Dashboard */
+
+/* Manejo de Are */
+
+.bg-holder-areas{
+    background: url(../img/foto-forgot.jpg);
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-blend-mode: darken;
+
+}
